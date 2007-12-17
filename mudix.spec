@@ -9,7 +9,6 @@ Release:	%{release}
 Source0:	http://dw.nl.eu.org/mudix/%{name}-%{version}.tar.bz2
 URL:		http://dw.nl.eu.org/mudix.html
 Group:		Games/Other
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	BSD-like
 BuildRequires:  ncurses-devel
 
