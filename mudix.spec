@@ -1,6 +1,6 @@
 %define	name	mudix
 %define	version	4.3
-%define	release %mkrel 9
+%define	release %mkrel 10
 
 Name:		%{name} 
 Summary:	Mudix console mud client
