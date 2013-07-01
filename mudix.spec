@@ -3,7 +3,7 @@
 %define	release %mkrel 10
 
 Name:		%{name} 
-Summary:	Mudix console mud client
+Summary:	Console mud client
 Version:	%{version} 
 Release:	%{release} 
 Source0:	http://dw.nl.eu.org/mudix/%{name}-%{version}.tar.bz2
