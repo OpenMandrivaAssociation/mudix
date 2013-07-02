@@ -1,6 +1,6 @@
 %define	name	mudix
 %define	version	4.3
-%define	release %mkrel 10
+%define release  11
 
 Name:		%{name} 
 Summary:	Console mud client
@@ -9,7 +9,6 @@ Release:	%{release}
 Source0:	http://dw.nl.eu.org/mudix/%{name}-%{version}.tar.bz2
 URL:		http://dw.nl.eu.org/mudix.html
 Group:		Games/Other
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	BSD-like
 BuildRequires:  ncurses-devel
 
@@ -23,17 +22,14 @@ Some of the features are aliases, timers and triggers.
 
 %build
 %configure
-%make O_FLAGS="$RPM_OPT_FLAGS"
+%make O_FLAGS="%{optflags}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -m755 mudix -D $RPM_BUILD_ROOT%{_gamesbindir}/mudix
+install -m755 mudix -D %{buildroot}%{_gamesbindir}/mudix
 
 %clean 
-rm -rf $RPM_BUILD_ROOT 
 
 %files 
-%defattr(-,root,root)
 %doc README
 %{_gamesbindir}/mudix
 
