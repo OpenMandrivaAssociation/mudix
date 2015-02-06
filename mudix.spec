@@ -1,6 +1,6 @@
 %define	name	mudix
 %define	version	4.3
-%define release  11
+%define release  12
 
 Name:		%{name} 
 Summary:	Console mud client
