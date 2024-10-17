@@ -7,7 +7,7 @@ Summary:	Console mud client
 Version:	%{version} 
 Release:	%{release} 
 Source0:	http://dw.nl.eu.org/mudix/%{name}-%{version}.tar.bz2
-URL:		http://dw.nl.eu.org/mudix.html
+URL:		https://dw.nl.eu.org/mudix.html
 Group:		Games/Other
 License:	BSD-like
 BuildRequires:  ncurses-devel
